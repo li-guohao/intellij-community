@@ -11,4 +11,7 @@
   </dependencies>
 
   <xi:include href="k2.xml" xpointer="xpointer(/idea-plugin/*)"/>
+  <extensions defaultExtensionNs="org.jetbrains.kotlin">
+    <analysis.additionalKDocResolutionProvider implementation="org.jetbrains.kotlin.idea.fir.resolve.AdditionalKDocResolutionProviderForTest"/>
+  </extensions>
 </idea-plugin>
